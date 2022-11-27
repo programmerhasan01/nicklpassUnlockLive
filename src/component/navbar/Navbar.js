@@ -26,7 +26,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
           <ul id={closeNav && styles.closeNav}>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <a href="#">For Enterprise</a>
