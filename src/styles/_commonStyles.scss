@@ -1,0 +1,42 @@
+@import "./variables";
+@mixin btnPrimary {
+  font-size: 14px;
+  background: $blue-primary;
+  color: $text-white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+@mixin btnDark {
+  background: #1a1c1e;
+  color: $text-white;
+  width: 50%;
+  padding: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+@mixin btnLight {
+  @include btnDark;
+  background: $text-white;
+  color: #1a1c1e;
+}
+
+@mixin btnBlockPrimary {
+  width: 100%;
+  border: none;
+  padding: 15px 0;
+  background: $blue-primary;
+  color: $text-white;
+  display: block;
+  cursor: pointer;
+}
+@mixin btnBlockLight {
+  @include btnBlockPrimary;
+  color: $black-primary;
+  background: $text-white;
+  display: block;
+  border: 1px solid $black-primary;
+  margin-top: 30px;
+  cursor: pointer;
+}

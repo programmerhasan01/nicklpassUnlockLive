@@ -1,0 +1,79 @@
+@import "./variables";
+@import "./commonStyles";
+.navContainer {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  .menuIcon {
+    display: none;
+  }
+  .contactSalesBtn {
+    @include btnPrimary;
+  }
+  img.logo {
+    width: 208px;
+    height: 60px;
+  }
+}
+
+.navbar {
+  ul {
+    display: flex;
+  }
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    color: $menu-item-color;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navContainer {
+    max-width: 90%;
+    padding: 20px 0;
+    img.logo {
+      width: 120px;
+      height: 60px;
+    }
+    .menuIcon {
+      color: $black-primary;
+      font-size: 30px;
+      display: block;
+    }
+  }
+  .navbar {
+    display: block;
+    ul {
+      position: absolute;
+      top: 120;
+      right: 15px;
+      width: 200px;
+      height: max-content;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: $blue-primary;
+      li {
+        padding: 10px 0;
+      }
+    }
+    ul#closeNav {
+      right: -100%;
+      display: none;
+    }
+    a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 20px;
+    }
+  }
+}

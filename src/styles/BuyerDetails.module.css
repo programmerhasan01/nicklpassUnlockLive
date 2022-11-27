@@ -1,0 +1,115 @@
+.BuyerDetailsContainer {
+  max-width: 1113px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: -208px;
+  background: #fef5e9;
+  padding: 40px;
+  font-family: "DM Sans", sans-serif;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft {
+  width: 670px;
+  border-right: 2px solid #ddd;
+  padding-right: 30px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerDetailsTerms h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerDetailsTerms p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoContainer h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields {
+  display: flex;
+  justify-content: space-between;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields .fieldContainer,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields .fieldContainer {
+  width: 49%;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields label,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields .field,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields .field {
+  margin-bottom: 16px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields .field input,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields .field input {
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  outline: none;
+  background: #fef5e9;
+  padding: 12px;
+  margin-top: 8px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields .field p,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields .field p {
+  margin: 0;
+  color: red;
+  font-weight: 300;
+  font-size: 12px;
+}
+.BuyerDetailsContainer .BuyerDetailsLeft form button {
+  padding: 15px 34px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  background: #254bcf;
+  color: #fff;
+  cursor: pointer;
+}
+.BuyerDetailsContainer .BuyerDetailsRight {
+  width: 283px;
+  padding: 30px 0px 0px 15px;
+}
+.BuyerDetailsContainer .BuyerDetailsRight h3 {
+  margin-top: 16px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .BuyerDetailsContainer {
+    top: -103px;
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  .BuyerDetailsContainer .BuyerDetailsLeft {
+    border: 0;
+  }
+  .BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields {
+    flex-direction: column;
+  }
+  .BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields .fieldContainer,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields .fieldContainer {
+    width: 100%;
+  }
+  .BuyerDetailsContainer .BuyerDetailsLeft .BuyerInfoFields .fieldContainer .field input,
+.BuyerDetailsContainer .BuyerDetailsLeft .additionalInfoFields .fieldContainer .field input {
+    width: 100%;
+  }
+  .BuyerDetailsContainer .BuyerDetailsLeft,
+.BuyerDetailsContainer .BuyerDetailsRight {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=BuyerDetails.module.css.map */

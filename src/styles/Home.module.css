@@ -1,0 +1,10 @@
+.container {
+  width: 1440px;
+  background: #fef5e9;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Home.module.css.map */

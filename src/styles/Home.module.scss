@@ -1,0 +1,11 @@
+@import "./variables";
+.container {
+  width: 1440px;
+  background: $main-bg;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}

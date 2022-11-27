@@ -1,0 +1,13 @@
+footer.footer {
+  width: 100%;
+  height: 72px;
+  background: #1a1c1e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer.footer p {
+  font-size: 16px;
+  font-weight: 500;
+}/*# sourceMappingURL=Footer.module.css.map */

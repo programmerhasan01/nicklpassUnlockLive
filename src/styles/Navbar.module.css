@@ -1,0 +1,82 @@
+.navContainer {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+  box-sizing: border-box;
+}
+.navContainer .menuIcon {
+  display: none;
+}
+.navContainer .contactSalesBtn {
+  font-size: 14px;
+  background: #254bcf;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.navContainer img.logo {
+  width: 208px;
+  height: 60px;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5d5d65;
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .navContainer {
+    max-width: 90%;
+    padding: 20px 0;
+  }
+  .navContainer img.logo {
+    width: 120px;
+    height: 60px;
+  }
+  .navContainer .menuIcon {
+    color: #1a1c1e;
+    font-size: 30px;
+    display: block;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 120;
+    right: 15px;
+    width: 200px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #254bcf;
+  }
+  .navbar ul li {
+    padding: 10px 0;
+  }
+  .navbar ul#closeNav {
+    right: -100%;
+    display: none;
+  }
+  .navbar a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
+  }
+}/*# sourceMappingURL=Navbar.module.css.map */

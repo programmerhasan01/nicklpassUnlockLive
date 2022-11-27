@@ -1,0 +1,113 @@
+@import "./variables";
+@import "./commonStyles";
+.businessInsider {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background: $main-bg;
+  padding: 40px;
+  position: relative;
+  top: -208px;
+  .businessCard {
+    width: 312px;
+    .bsTitle {
+      font-weight: 700;
+      font-size: 18px;
+      font-family: "DM Sans", sans-serif;
+    }
+    .bsPrice {
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        font-family: "DM Sans", sans-serif;
+        span {
+          color: #c7c7c7;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        font-family: "DM Sans", sans-serif;
+      }
+    }
+    .bsBtns {
+      border: 1px solid #ddd;
+      padding: 2px;
+      margin-top: 24px;
+      margin-bottom: 48px;
+      .btnDark {
+        @include btnDark;
+      }
+      .btnLight {
+        @include btnLight;
+      }
+    }
+    .BtnBlockPrimary {
+      @include btnBlockPrimary;
+    }
+    .BtnBlockLight {
+      @include btnBlockLight;
+    }
+  }
+
+  .businessBenefits {
+    max-width: 1140px - 312px;
+    margin-left: 80px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .benefitsItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        width: 54px;
+        height: 54px;
+      }
+      .bsInfo {
+        margin-left: 20px;
+        h4 {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        p {
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .businessInsider {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: -103px;
+    .businessCard {
+      width: 100%;
+      margin: auto;
+    }
+    .businessBenefits {
+      width: 100%;
+      margin: auto;
+      justify-content: flex-start;
+      padding: 0;
+    }
+  }
+}

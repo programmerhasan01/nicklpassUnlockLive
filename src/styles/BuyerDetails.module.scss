@@ -1,0 +1,117 @@
+@import "./variables";
+.BuyerDetailsContainer {
+  max-width: 1113px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: -208px;
+  background: $main-bg;
+  padding: 40px;
+  font-family: "DM Sans", sans-serif;
+  .BuyerDetailsLeft {
+    width: 670px;
+    border-right: 2px solid #ddd;
+    padding-right: 30px;
+    .title {
+      font-weight: 700;
+      font-size: 32px;
+    }
+    .BuyerDetailsTerms {
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 0;
+      }
+    }
+    .additionalInfoContainer {
+      h3 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    .BuyerInfoFields,
+    .additionalInfoFields {
+      display: flex;
+      justify-content: space-between;
+      .fieldContainer {
+        width: 49%;
+      }
+      label {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .field {
+        margin-bottom: 16px;
+        input {
+          width: 100%;
+          border: 1px solid #c7c7c7;
+          outline: none;
+          background: $main-bg;
+          padding: 12px;
+          margin-top: 8px;
+        }
+        p {
+          margin: 0;
+          color: red;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+    form {
+      button {
+        padding: 15px 34px;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        background: $blue-primary;
+        color: $text-white;
+        cursor: pointer;
+      }
+    }
+  }
+  .BuyerDetailsRight {
+    width: 283px;
+    padding: 30px 0px 0px 15px;
+    h3 {
+      margin-top: 16px;
+      font-size: 19px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .BuyerDetailsContainer {
+    top: -103px;
+    flex-direction: column-reverse;
+    padding: 20px;
+    .BuyerDetailsLeft {
+      border: 0;
+      .BuyerInfoFields,
+      .additionalInfoFields {
+        flex-direction: column;
+        .fieldContainer {
+          width: 100%;
+          .field {
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .BuyerDetailsLeft,
+    .BuyerDetailsRight {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
