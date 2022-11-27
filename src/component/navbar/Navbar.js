@@ -25,11 +25,21 @@ const Navbar = () => {
         </Link>
         <nav className={styles.navbar}>
           <ul id={closeNav && styles.closeNav}>
-            <Link href="/">Home</Link>
-            <Link href="#">For Enterprise</Link>
-            <Link href="#">For Publisher</Link>
-            <Link href="#">We’re Hiring</Link>
-            <Link href="#">Support</Link>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="#">For Enterprise</Link>
+            </li>
+            <li>
+              <Link href="#">For Publisher</Link>
+            </li>
+            <li>
+              <Link href="#">We’re Hiring</Link>
+            </li>
+            <li>
+              <Link href="#">Support</Link>
+            </li>
           </ul>
         </nav>
         <Link href="/contact">
